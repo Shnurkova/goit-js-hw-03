@@ -1,12 +1,11 @@
 function filterArray(numbers, value){
     const newArray = [];
-    for (let i = 0; i < numbers.length; i++) {
+    for (let i = 0; i < numbers; i++) {
         if (i < value) {
-            return newArray
+            return newArray.slice();
         } else {
             return [];
         }
-        
     }
     return newArray;
 }
